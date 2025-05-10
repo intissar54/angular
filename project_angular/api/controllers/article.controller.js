@@ -78,6 +78,7 @@ exports.update = async (req, res) => {
                 message: `Impossible de mettre à jour l'article avec l'id=${id}. Article non trouvé!`
             });
         }
+        
 
         res.status(200).send({
             message: "Article mis à jour avec succès.",
